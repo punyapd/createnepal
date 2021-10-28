@@ -31,3 +31,38 @@ def refrenced_books(request):
 # =============TECH NEWS================
 def tech_news(request):
     return render(request, 'app/tech-news.html')
+
+#============= ALL PROGRAMMING VIEWS ================
+def programming(request):
+    return render(request , 'app/programming.html')
+def learnhtml(request):
+    return render(request , 'app/learnhtml.html')
+def intro(request):
+    return render(request , 'app/introduction.html')
+
+
+def learncss(request):
+    return render(request , 'app/learncss.html')
+
+def learnbootstrap(request):
+    return render(request , 'app/learnbootstrap.html')
+
+def learnjavascript(request):
+    return render(request , 'app/learnjavascript.html')
+
+def learnjquery(request):
+    return render(request , 'app/learnjquery.html')
+
+def learnphp(request):
+    return render(request , 'app/learnphp.html')
+
+def learnpython(request):
+    return render(request , 'app/learnpython.html')
+
+def learndjango(request):
+    return render(request , 'app/learndjango.html')
+
+def learnsql(request):
+    return render(request  , 'app/learnsql.html')
+
+#====================END OF PROGRAMMING VIEWS ==============

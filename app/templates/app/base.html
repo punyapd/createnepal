@@ -42,7 +42,7 @@
                     </a>
                     </li>
                   <li><a class="dropdown-item" href="{% url 'courses' %}">Courses</a></li><hr>
-                  <li><a class="dropdown-item" href="#">Programming</a></li><hr>
+                  <li><a class="dropdown-item" href="{% url 'programming' %}">Programming</a></li><hr>
                   <li><a class="dropdown-item" href="#">Sports News</a></li><hr>
                   <li><a class="dropdown-item" href="#">Nepali share Market</a></li><hr>
                   <li><a class="dropdown-item" href="{% url 'tech-news' %}">Tech News</a></li><hr>
@@ -70,6 +70,7 @@
         
       </nav>
       <!-- ===============HOME PAGE================== -->
+      {% block content %}{% endblock content %}
       {% block carousel %}{% endblock carousel %}
       {% block three-boxes %}{% endblock three-boxes %}
 
