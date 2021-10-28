@@ -51,11 +51,15 @@
 }
 .feature-icon{
     position: relative;
-    width: 60px;
+    font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fdbe33;
+    padding-left: 13px;
+}
+.feature .col-md-12:nth-child(2n) .feature-icon{
+    color: black;
 }
 .feature .feature-icon::before{
     position: absolute;
@@ -79,8 +83,157 @@
     border-radius: 60px;
     z-index: 2;
 }
-
+.feature .col-md-12:nth-child(2n) .feature-icon::after{
+    background: #fdbe33;
+}
 .feature .col-md-12:nth-child(2n) {
     color: #030f27;
     background: #fdbe33;
 }
+
+.feature-text{
+    padding-left: 60px;
+    color: white;
+}
+
+/* ===============COURSES & BSC CSIT BOTH===================== */
+.courses .container-fluid{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 100%;
+    margin-top: 10px;
+}
+.course-list{
+    height: 250px;
+    background: #030f27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.courses .col-lg-3:nth-child(2n) .course-list{
+    background: #fdbe33;
+}
+.courses .col-lg-3:nth-child(5) .course-list{
+    background: #fdbe33;
+}
+.courses .col-lg-3:nth-child(6) .course-list{
+    background: #030f27;
+}
+.courses .col-lg-3:nth-child(7) .course-list{
+    background: #fdbe33;
+}
+.courses .col-lg-3:nth-child(8) .course-list{
+    background: #030f27;
+}
+.course-list h3{
+    color: white;
+}
+.course-list:hover, h3:hover{
+    border-radius: 50%;
+    color: red;
+}
+
+/* ================SEMESTER================= */
+.semester .container-fluid{
+    margin-top: 10px;
+}
+.semester-box{
+    height: 250px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #030f27;
+    border-radius: 100px 0 100px 100px;
+    text-align: center;
+}
+.semester .col-lg-4:nth-child(2n) .semester-box{
+    background: #fdbe33;
+}
+.semester-box h3{
+    color: white;
+}
+
+/* ==============SUBJECT=============== */
+.subject{
+    background: chocolate;
+}
+.subject .row{
+    margin-top: 10px;
+}
+.subject-box{
+    background: #030f27;
+    color: white;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    border-radius: 30px 0px 30px 30px;
+}
+.subject .col-lg-2:nth-child(2n) .subject-box{
+    background: #fdbe33;
+}
+
+/* ===================QUESTIONS====================== */
+.unitwise-questions{
+    background: rgb(240, 184, 184);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.unitwise-questions .row{
+    height: auto;
+}
+
+/* =============MODEL QUESTIONS=================== */
+.model-question button{
+    margin-top: 10px;
+}
+.col-lg-8{
+    display: flex;
+}
+.model-questions-box{
+    height: auto;
+    width: auto;
+    background: white;
+    margin-top: 20px;
+}
+.questions-year .col-lg-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===============REFRENCED BOOKS=================== */
+.refrenced-books-box{
+    height: 200px;
+    width: 200px;
+    background: coral;
+}
+
+/* =================TECH NEWS========================= */
+.tech-box{
+}
+.tech-box .container{
+    background: white;
+    height: 100px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    margin-top: 30px;
+}
+.tech-box .col-lg-12 a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+

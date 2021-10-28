@@ -1,0 +1,32 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block courses %}
+    <div class="courses">
+     <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-lg-3">
+                <div class="course-list">
+                    <a href="{% url 'bsccsit' %}"><h3>BSC CSIT</h3></a>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="course-list">
+                    <h3>BCA</h3>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="course-list">
+                    <h3>BIT</h3>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="course-list">
+                    <h3>ENGINEERING</h3>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
+{% endblock courses %}
+

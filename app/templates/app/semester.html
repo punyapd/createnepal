@@ -1,0 +1,35 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block semester %}
+    <div class="semester">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="semester-box">
+                        <a href="{% url 'subject' %}"><h3>Introduction to Information Technology</h3></a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="semester-box">
+                        <h3>C-Programming</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="semester-box">
+                        <h3>Digital Logic</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="semester-box">
+                        <h3>Mathematics-I</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="semester-box">
+                        <h3>Physics</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock semester %}
