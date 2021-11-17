@@ -2,14 +2,64 @@
 {% load static %}
 {% block tech-news %}
     <hr>
-    <div class="tech-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <a href="">Admission Open For Various Programs at ISMT College</a>
+        <!-- <div class="tech-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="tech-frontpart col-lg-9">
+                                <img src="{% static "app/image/tech.jpg" %}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="tech-backpart">
+
+                        </div>
+                        
+                    </div>
                 </div>
-                <span>From<span class="font-bold"> August 01, 2021</span> Until<span class="font-bold"> September 01, 2022</span></span>
+            </div>
+        </div> -->
+
+
+
+        {% comment %} <div class="container">
+            <div class="row">
+                <div class="tech-box">
+
+                <div class="col-lg-2 col-md-12">
+                    <div class="tech-img">
+                        <img src="{% static "app/image/tech.jpg" %}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12">
+                    <a href="">Admission Open For Various Programs at ISMT College</a><br>
+                    <span>From<span class="fw-bold"> August 01, 2021</span> Until<span class="fw-bold"> September 01, 2022</span></span>
+                </div>
+                
+                
+                
+                <div class="offset-lg-1 offset-md-1"></div>
+            </div> 
             </div>
         </div>
-        
+            {% endcomment %}
+
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="{% static "app/image/agriculture1.jpg" %}" alt="" class="card-img-top">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">tech news</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ab et, accusantium omnis reprehenderit laudantium inventore maxime in quaerat tenetur nam. Vel optio, tempore earum odit in modi est officiis!</p>
+                        <p class="btn btn-warning" style="border-radius:20px 0px 20px 20px;">Read Full</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock tech-news %}

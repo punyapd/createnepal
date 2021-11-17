@@ -11,6 +11,7 @@ urlpatterns = [
     path('model-questions', views.model_questions, name='model-questions'),
     path('refrenced-books', views.refrenced_books, name='refrenced-books'),
     path('tech-news', views.tech_news, name='tech-news'),
+    path('sports', views.sports, name='sports'),
 
     # ========================= PROGRAMMING URLS============================
 

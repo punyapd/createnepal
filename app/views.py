@@ -32,6 +32,8 @@ def refrenced_books(request):
 def tech_news(request):
     return render(request, 'app/tech-news.html')
 
+def sports(request):
+    return render(request, 'app/sports.html')
 #============= ALL PROGRAMMING VIEWS ================
 def programming(request):
     return render(request , 'app/programming.html')
