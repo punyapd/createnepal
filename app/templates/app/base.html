@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="{% static "app/css/style.css" %}">
     <!--FontAwesome CSS-->
     <link rel="stylesheet" href="{% static 'app/css/all.min.css' %}">
+    <!-- Main JS -->
+    <link rel="stylesheet" href="{% static 'app/js/main.js' %}">
+
     <title></title>
   </head>
   <body>
       <!-- ======================NAVBAR============================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top"> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger"> 
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,14 +59,13 @@
             </ul>
 
             <div class="logo">
-                <img src="{% static "app/image/logopng.png" %}" alt="">
-                
-    
+                <img src="{% static "app/image/logo.png" %}" alt="">
+
             </div>
 
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-danger" type="submit">Search</button>
+              <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
           </div>
         </div>
