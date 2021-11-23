@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views
+from django.contrib.auth import authenticate, login, views as auth_views
+from .forms import LoginForm
 
 
 urlpatterns = [
@@ -27,4 +29,10 @@ urlpatterns = [
     path('learnsql/' , views.learnsql , name = 'learnsql'),
     path('intro/' , views.intro , name = "intro"),
     path('contact/' , views.contact , name = 'contact'),
+    # ==================registration=======================
+    path('registration/', views.CustomerRegistrationView.as_view(),
+         name='customerregistration'),
+    # ====================login ==============================
+    path('accounts/login/', auth_views.LoginView.as_view(template_name='app/login.html',
+         authentication_form=LoginForm), name='login')
 ]

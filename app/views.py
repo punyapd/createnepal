@@ -1,4 +1,10 @@
 from django.shortcuts import render
+from django.views import View
+from django.contrib import messages
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, UsernameField
+from django import forms
+from django.utils.translation import gettext, gettext_lazy as _
+from .forms import CustomerRegistrationForm
 
 # Create your views here.
 def home(request):
@@ -73,3 +79,23 @@ def learnsql(request):
 #contact view
 def contact(reqeust):
     return render(reqeust , 'app/contact.html')
+
+# ======================REGISTRATION VIEW=================
+class CustomerRegistrationView(View):
+    def get(self, request):
+        form = CustomerRegistrationForm()
+        return render(request, 'app/customerregistration.html', {'form':form})
+    
+    def post(self, request):
+        form = CustomerRegistrationForm(request.POST)
+        if form.is_valid():
+            messages.success(request, 'Congratulations! Registered Successfully!')
+            form.save()
+        return render(request, 'app/customerregistration.html', {'form':form})
+    
+# ================LOGIN VIEW============================
+class LoginForm(AuthenticationForm):
+    username = UsernameField(widget=forms.TextInput(
+        attrs={'autofocus': True, 'class': 'form-control'}))
+    password = forms.CharField(label=_("password"), strip=False, widget=forms.PasswordInput(
+        attrs={'autocomplete': 'current-password', 'class': 'form-control'}))
