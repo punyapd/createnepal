@@ -9,10 +9,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static "app/css/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static "app/js/bootstrap.min.js" %}">
-    <!-- css style -->
-    <link rel="stylesheet" href="{% static "app/css/style.css" %}">
+
     <!--FontAwesome CSS-->
     <link rel="stylesheet" href="{% static 'app/css/all.min.css' %}">
+    <!-- css style -->
+    <link rel="stylesheet" href="{% static "app/css/style.css" %}">
+
+    <!-- extra css-->
+    {% block extracss %}{% endblock extracss %}
+    
     <!-- Main JS -->
     <link rel="stylesheet" href="{% static 'app/js/main.js' %}">
 
@@ -20,7 +25,7 @@
   </head>
   <body>
       <!-- ======================NAVBAR============================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger"> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top " id = "navbar_top"> 
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,21 +44,48 @@
                   Categories
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li class="nav-item dropdown">
-                    <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <li>
+                    <a href = "#" class ="dropdown-item">
                       Courses
                     </a>
-                    </li>
-                  <li><a class="dropdown-item" href="{% url 'courses' %}">Courses</a></li><hr>
-                  <li><a class="dropdown-item" href="{% url 'programming' %}">Programming</a></li><hr>
+                    <ul class="submenu dropdown-menu">
+                      <li><a href="#" class="dropdown-item">Bsc.Csit</a></li>
+                      <li><a href="#" class="dropdown-item">BCA</a></li>
+                      <li><a href="#" class="dropdown-item">BIT</a></li>
+
+                    </ul>
+                    </li><hr>
+                  <li><a class="dropdown-item" href="{% url 'programming' %}">Programming</a>
+                    <ul class="submenu dropdown-menu">
+                       <li><a href="#" class="dropdown-item">HTML</a></li>
+                       <li><a href="#" class="dropdown-item">CSS</a></li>
+
+                       <li><a href="#" class="dropdown-item">JAVASCRIPT</a></li>
+
+                       <li><a href="#" class="dropdown-item">JQUERY</a></li>
+                       <li><a href="#" class="dropdown-item">PYTHON</a></li>
+                       <li><a href="#" class="dropdown-item">SQL</a></li>
+                       <li><a href="#" class="dropdown-item">BOOTSTRAP5</a></li>
+                       <li><a href="#" class="dropdown-item">DJANGO</a></li>
+                       <li><a href="#" class="dropdown-item">PHP</a></li>
+
+                    </ul>
+                  </li><hr>
                   <li><a class="dropdown-item" href="{% url 'sports' %}">Sports News</a></li><hr>
-                  <li><a class="dropdown-item" href="#">Nepali share Market</a></li><hr>
-                  <li><a class="dropdown-item" href="{% url 'tech-news' %}">Tech News</a></li><hr>
+                  
+                 
 
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'tech-news' %}">Tech News</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="https://Nepalijaankari.blogspot.com/">Blog</a>
+              </li>
+
+               <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
               </li>
               
             </ul>

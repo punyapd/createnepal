@@ -68,3 +68,8 @@ def learnsql(request):
     return render(request  , 'app/learnsql.html')
 
 #====================END OF PROGRAMMING VIEWS ==============
+
+
+#contact view
+def contact(reqeust):
+    return render(reqeust , 'app/contact.html')
