@@ -1,7 +1,7 @@
 {% extends "app/base.html" %}
 {% load static %}
 {% block courses %}
-    <div class="courses">
+    {% comment %} <div class="courses">
      <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-md-12 col-lg-3">
@@ -26,7 +26,75 @@
             </div>
         </div>
      </div>
-    </div>
+    </div> {% endcomment %}
+
+    <!-- =============== for box =============== -->		
+	<section class="for-box">
+	 <div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownLeft animated" data-wow-delay=".1s">
+				<div class="clr1">				
+				<h2>
+					BSC CSIT
+				</h2>
+				</div>
+				<div class="wbox">
+					<a class="btn btn-secondary" href="{% url 'bsccsit' %}">Click for Course</a>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam 
+nullam rhoncus tortor at dignissim vehicula.</p>
+					<a href="#" class="clr1-a" >+</a>
+				</div>
+				
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownLeft animated" data-wow-delay=".2s">
+				
+				<div class="clr2">				
+				<h2>
+					BIT<br/>
+				</h2>
+				</div>
+				<div class="wbox">
+					<strong class="btn btn-secondary">Click for Course</strong>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam 
+nullam rhoncus tortor at dignissim vehicula.</p>
+					<a href="#" class="clr2-a">+</a>
+				</div>
+				
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownRight animated" data-wow-delay=".3s">
+				
+				<div class="clr3">				
+				<h2>
+					BCA<br/>
+				</h2>	
+				</div>
+				<div class="wbox">
+					<strong class="btn btn-secondary">Click for Course</strong>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam 
+nullam rhoncus tortor at dignissim vehicula.</p>
+					<a href="#" class="clr3-a">+</a>
+				</div>
+			
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownRight animated" data-wow-delay=".4s">
+				
+				<div class="clr4">				
+				<h2>
+					ENGINEERING
+				</h2>
+				</div>
+				<div class="wbox">
+					<strong class="btn btn-secondary">Click for Course</strong>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam 
+nullam rhoncus tortor at dignissim vehicula.</p>
+					<a href="#" class="clr4-a">+</a>
+				</div>
+				
+			</div>
+		</div>
+	 </div>
+	</section>
+	
 
 {% endblock courses %}
 

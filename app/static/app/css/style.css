@@ -20,7 +20,6 @@ html , body{
     border-bottom: 1px solid #0DCAF0;
 }
 
-
 .btn{
     border-radius: 20px 0px 20px 20px;
 }
@@ -103,7 +102,7 @@ html , body{
 
 /* ============three boxes================== */
 .feature .col-lg-4{
-    background: #030f27;
+    background: #DC3545;
 }
 .container-fluid{
     width: 100%;
@@ -128,7 +127,7 @@ html , body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fdbe33;
+    color: black;
     padding-left: 13px;
 }
 .feature .col-md-12:nth-child(2n) .feature-icon{
@@ -141,74 +140,237 @@ html , body{
     height: 80px;
     top: 0;
     left: -10px;
-    border: 2px dotted rgb(255, 255, 255);
-    border-radius: 60px;
-    z-index: 1;
 }
-.feature .feature-icon::after{
-    position: absolute;
-    content: "";
-    width: 79px;
-    height: 79px;
-    top: -15px;
-    left: -9px;
-    background: #030f27;
-    border-radius: 60px;
-    z-index: 2;
-}
+
 .feature .col-md-12:nth-child(2n) .feature-icon::after{
-    background: #fdbe33;
+    background: white;
 }
 .feature .col-md-12:nth-child(2n) {
-    color: #030f27;
-    background: #fdbe33;
+    background: white;
 }
 
 .feature-text{
     padding-left: 60px;
-    color: white;
+    color: black;
 }
 
-/* ===============COURSES & BSC CSIT BOTH===================== */
-.courses .container-fluid{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1px;
-    padding-right: 1px;
+/* ===============COURSES===================== */
+.for-box
+{
+ padding-top: 10px;
+}
+
+.for-box .clr1
+{
+background:#0bc5eb;
+color:#fff;
+padding: 50px 0 50px;
+text-align:center;
+overflow:hidden;
+position:relative;
+}
+.for-box .clr1::before
+{
+position:absolute;
+content:"";
+width:100%;
+height:40%;
+background:#23adc5;
+left:0;
+top: -20px;
+transform: skewY(172.5deg);
+}
+.clr1-a {
+    background: #04cff8 none repeat scroll 0 0;
+    left: 0;
+    padding: 30px;
+    position: absolute;
     width: 100%;
-    margin-top: 10px;
 }
-.course-list{
-    height: 250px;
-    background: #030f27;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+.clr1-a::after {
+    background: #0bc5eb none repeat scroll 0 0;
+    content: "";
+    height: 137%;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    transform: skewY(-5.5deg);
+    width: 100%;
+    z-index: -1;
 }
-.courses .col-lg-3:nth-child(2n) .course-list{
-    background: #fdbe33;
+.clr1-a {
+    background: #fff none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-size: 31px;
+    left: 0;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    width: 101%;
+    z-index: 999;
 }
-.courses .col-lg-3:nth-child(5) .course-list{
-    background: #fdbe33;
+.for-box .clr2
+{
+background: #DC3545;
+color:#fff;
+padding: 50px 0 50px;
+text-align:center;
+overflow:hidden;
+position:relative;
+
 }
-.courses .col-lg-3:nth-child(6) .course-list{
-    background: #030f27;
+.for-box .clr2::before
+{
+position:absolute;
+content:"";
+width:100%;
+height:40%;
+background:#b43b47;
+left:0;
+top: -20px;
+transform: skewY(171.5deg);
 }
-.courses .col-lg-3:nth-child(7) .course-list{
-    background: #fdbe33;
+.clr2-a::after {
+    background: #DC3545 none repeat scroll 0 0;
+    content: "";
+    height: 137%;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    transform: skewY(-5.5deg);
+    width: 100%;
+    z-index: -1;
 }
-.courses .col-lg-3:nth-child(8) .course-list{
-    background: #030f27;
+.clr2-a {
+    background: #fff none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-size: 31px;
+    left: 0;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    width: 101%;
+    z-index: 999;
 }
-.course-list h3{
-    color: white;
+.for-box .clr3
+{
+background:#0bc5eb;
+color:#fff;
+text-align:center;
+padding: 50px 0 50px;
+overflow:hidden;
+position:relative;
+
 }
-.course-list:hover, h3:hover{
-    border-radius: 50%;
-    color: red;
+.for-box .clr3::before
+{
+position:absolute;
+content:"";
+width:100%;
+height:40%;
+background:#23adc5;
+left:0;
+top: -20px;
+transform: skewY(171.5deg);
+}
+.clr3-a::after {
+    background: #0bc5eb none repeat scroll 0 0;
+    content: "";
+    height: 137%;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    transform: skewY(-5.5deg);
+    width: 100%;
+    z-index: -1;
+}
+.clr3-a {
+    background: #fff none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-size: 31px;
+    left: 0;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    width: 101%;
+    z-index: 999;
+}
+.for-box .clr4
+{
+background:#DC3545;
+color:#fff;
+padding: 50px 0 50px;
+text-align:center;
+overflow:hidden;
+position:relative;
+}
+.for-box .clr4::before
+{
+position:absolute;
+content:"";
+width:100%;
+height:40%;
+background:#b43b47;
+left:0;
+top: -20px;
+transform: skewY(171.5deg);
+}
+.clr4-a::after {
+    background: #DC3545 none repeat scroll 0 0;
+    content: "";
+    height: 137%;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    transform: skewY(-5.5deg);
+    width: 100%;
+    z-index: -1;
+}
+.clr4-a {
+    background: #fff none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-size: 31px;
+    left: 0;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    width: 101%;
+    z-index: 999;
+}
+.wbox {
+    background: #fff none repeat scroll 0 0;
+    margin-bottom: 100px;
+    padding: 20px 20px 60px;
+    position: relative;
+	overflow: hidden;
+    text-align: center;
+}
+.wbox  p
+{
+padding:10px;
 }
 
+/* =================BSC CSIT================ */
+.bsc-csit{
+    margin-top: 10px;
+    max-height: 500px;
+    background-color: #d68e95;
+}
+.bsccsit-box{
+    margin-top: 10px;
+    text-align: center;
+    height: 200px;
+    margin-bottom: 10px;
+    justify-content: center;
+
+}
+.bsccsit-box ul li{
+    list-style-type: none;
+}
 /* ================SEMESTER================= */
 .semester .container-fluid{
     margin-top: 10px;
@@ -230,15 +392,24 @@ html , body{
     color: white;
 }
 
+/* -----------SUBJECT_BASE------------ */
+.subject-box a:hover{
+    color: black;
+    font-size: 18px;
+    transition: 0.4s;
+    font-weight: bold;
+
+}
+
 /* ==============SUBJECT=============== */
 .subject{
-    background: chocolate;
+    background: #129e8b;
 }
 .subject .row{
     margin-top: 10px;
 }
 .subject-box{
-    background: #030f27;
+    background: #132c5d;
     color: white;
     display: flex;
     margin-top: 10px;
@@ -250,12 +421,12 @@ html , body{
     border-radius: 30px 0px 30px 30px;
 }
 .subject .col-lg-2:nth-child(2n) .subject-box{
-    background: #fdbe33;
+    background: #DC3545;
 }
 
 /* ===================QUESTIONS====================== */
 .unitwise-questions{
-    background: rgb(240, 184, 184);
+    background: #d47a83;
     margin-left: 40px;
     margin-right: 40px;
 }
