@@ -25,6 +25,6 @@ urlpatterns = [
     path('learnpython/' , views.learnpython , name = 'learnpython'),
     path('learndjango/' , views.learndjango , name = 'learndjango'),
     path('learnsql/' , views.learnsql , name = 'learnsql'),
-    path('intro/' , views.intro , name = "intro")
-
+    path('intro/' , views.intro , name = "intro"),
+    path('contact/' , views.contact , name = 'contact'),
 ]
